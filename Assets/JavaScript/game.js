@@ -10,8 +10,8 @@ window.onload = function () {
     var words = [
         "Louis Vuitton",
         "Chanel",
-        "YvesSaintLaurent",
-        "MichaelKors",
+        "Yves Saint Laurent",
+        "Michael Kors",
         "Gucci",
         "Dior",
         "Prada",
@@ -63,7 +63,7 @@ window.onload = function () {
         var theKey = e.key.toLowerCase();
         var theKeyCode = e.keyCode;
 
-        if (theKeyCode >= 65 && theKeyCode <= 90 && listLetters.indexOf(theKey) === -1) {
+        if (theKeyCode >= 32 && theKeyCode <= 95 && listLetters.indexOf(theKey) === -1) {
             listLetters.push(theKey);
 
             if (randomWord.indexOf(theKey) === -1) {
