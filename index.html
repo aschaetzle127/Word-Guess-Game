@@ -3,33 +3,27 @@
 
 
 <head>
-    <link rel="reset" href="assets/CSS/reset.css">
+    <link rel="reset" href="Assets/CSS/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Assets/css/style.css">
-    <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script type="text/javascript" src="Assets/Javascript/game.js"></script>
 
     <title>Word Guess Game 2019 0304</title>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="header">
-            <h1>Hang Me Like Silk</h1>
-            <h2>A Word Guess Game by Alex Schaetzle</h2>
+        <div class="jumbotron">
+            <h1 class="display-4">Fashion Haus</h1>
+            <p class="lead">A Word Guess Game by Alex Schaetzle</p>
         </div>
-
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <p id="prompt"></p>
-                <p> Wins <span id="win-count"></span></p>
-                <div id="current-word" class="letters"></div>
-                <p> Number of Guesses Remaining  <span id="guess-count"></span></p>
-                <p> Letters Guessed<span id="letters-guessed"></span></p>
-            </div>
-            <div class="col-md-3"></div>
+        <div class="container-game">
+            <div id="current-word" class="letters"></div>
+            <p> Letters Guessed<span id="letters-guessed"></span></p>
         </div>
+        <div class="win-guess"><p> Wins <span id="win-count"></span></p>
+        <p> Number of Guesses Remaining <span id="guess-count"></span></p></div>
+    </div>
     </div>
 
 </body>
